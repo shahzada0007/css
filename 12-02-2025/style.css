@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+:root{
+    --text-color: white;
+    --background-color: rgb(10, 10, 49);
+    --background-color2: rgb(58, 58, 92);
+}
+
+
+/* nav */
+.nav{
+    height: 3rem;
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    padding: 1rem 1rem;
+    /* transition: all 2s ease-in; */
+}
+.nav .navpart-1{
+    color:white;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+}
+.navpart-2 a{
+    color:var(--text-color);
+    font-size: 1rem;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 3rem;
+  
+   
+}
+.navpart-2 i{
+    display: none;
+}
+.navpart-2 a:hover{
+    background-color:white;
+    color: black;
+    height: 1rem;
+    width: 100%;
+    border: 0.3rem solid white;
+    border-radius: 0.5rem;
+}
+
+
+/* main */
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+   
+
+}
+.mainpart-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15vw;
+}
+.mainpart-2 img{
+    height: 50%;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  
+   
+    
+}
+.mainpart-1{
+    height: 50%;
+    width: 100%;
+    padding-left:4rem;
+ 
+}
+.mainpart-1 h3{
+    font-size: 1.9rem
+}
+.mainpart-1 h1{
+    font-size: 4rem;
+
+}
+.mainpart-1 .btn-1{
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    text-decoration: none;
+    align-items: center;
+    background-color: rgb(19, 190, 247);
+    border: 1px solid rgb(19, 190, 247);
+    margin-top: 0.5rem;
+    border-radius:0.5rem ;
+}
+
+.mainpart-1 .btn-1:hover{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+.mainpart-1 .name{
+    color: rgb(19, 190, 247);
+}
+ .main-2{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-around;
+    
+ }
+
+
+ /* .main-2 */
+ .main-2 .card{
+    height: 300px;
+    width: 300px;
+    background-color:var(--background-color2--);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    box-shadow: 2px 2px 5px white;
+    padding:3vw;
+    
+}
+.main-2 .card:hover{
+    color: black;
+    background-color:rgb(19, 190, 247);
+}
+
+
+ .main-2 .card i{
+    height: 2em;
+    width: 2em;
+    color: rgb(19, 125, 247);
+ }
+
+/* main-3 */
+.main-3{
+    height: 5rem;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-3 h2{
+    font-size: 3rem;
+}
+.main-3 h4{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+    .navpart-2 a{
+        display: none;
+
+    }
+    .navpart-2 i{
+        display: block;
+    }
+    
+    .mainpart-2 img{
+        height: auto;
+        width: 100%;
+       margin-bottom: 18em;
+       margin-left: 5em;
+    }
+    .main-2 {
+    
+        flex-direction: column;
+       
+        align-items: center;
+    }
+    .main-2 .card{
+      
+        width: 90%;
+        
+    }
+}
+
+@media only screen and (max-width:800px){
+    .navpart-2 a{
+        display: none;
+
+    }
+    .navpart-2 i{
+        display: block;
+    }
+
+    .main{
+        height: 150%;
+        width: 100%;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        display: block;
+    }
+    .mainpart-1 h1{
+        font-size: 3rem;
+    }
+    .mainpart-2{
+        height: 50%;
+        width: 50%;
+    }
+    .mainpart-2 img{
+        height: 100%;
+        width: 100%;
+       margin-bottom: 18em;
+       margin-left: 5em;
+    }
+    .main-2 {
+    
+        flex-direction: column;
+       
+        align-items: center;
+    }
+    .main-2 .card{
+      
+        width: 90%;
+        
+    }
+
+}
